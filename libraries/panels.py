@@ -1,9 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Multi Image FFT Filter
-# <https://github.com/simondona/img-fft-filter-bec-tn>
-# Copyright (C) 2014-2015  Simone Donadello
+# Copyright (C) 2014-2016  Simone Donadello
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

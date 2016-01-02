@@ -1,6 +1,9 @@
 # Multi Image FFT Filter
+This software reads, filters and renders the images in the `.sis` file format,
+used in the atomic physics experiment of the ultracold gases laboratory at the University of Trento - Italy (BEC research group).
 
-This software reads, filters and renders the images in the `.sis` file format, used in the atomic physics experiment of the ultracold gases laboratory at the University of Trento - Italy (BEC research group).
+https://github.com/simondona/img-fft-filter-bec-tn
+
 
 ### Features:
 * interactively **remove interference fringes** from the experimental `.sis` images using **FFT** filtering masks
@@ -24,8 +27,8 @@ git clone https://github.com/simondona/img-fft-filter-bec-tn
 * Scipy 0.14
 * Matplotlib 1.3
 * Numpy 1.8
-* Imagemagick 6.8
-* Libav 6.11 (or FFMpeg 2.5)
+* ImageMagick 6.8
+* Libav 6.11 (or FFmpeg 2.5)
 
 
 ### Linux (Ubuntu/Debian)
@@ -49,7 +52,8 @@ Download and install:
 * http://www.imagemagick.org/script/binary-releases.php#windows
 * https://libav.org/download.html
 
-Create a text file in `C:\Users\username\.matplotlib\matplotlibrc` (without extension) where `username` is the Windows user, with the following text:
+Create a text file in `C:\Users\username\.matplotlib\matplotlibrc` (without extension)
+where `username` is the Windows user, with the following text:
 ```
 animation.convert_path: C:\Program Files\ImageMagick-6.9.0-Q16\convert.exe
 animation.avconv_path: C:\libav\usr\bin\avconv.exe
@@ -58,20 +62,19 @@ animation.avconv_path: C:\libav\usr\bin\avconv.exe
 
 
 ## Usage
-Launch `./img-fft-filter.py` or `python img-fft-filter.py`. Use `-r` argument to reset the current configuration if the startup has problems.
+Launch `./img-fft-filter.py` or `python img-fft-filter.py`.
+Use `-r` argument to reset the current configuration if the startup has problems.
 
 
 ## Author
-* Simone Donadello
+* [Simone Donadello](https://github.com/simondona/)
 
 
 ## License
 This software is licensed under the [GNU General Public License version 3](http://www.gnu.org/licenses/gpl-3.0.html).
 
 ```
-Multi Image FFT Filter
-<https://github.com/simondona/img-fft-filter-bec-tn>
-Copyright (C) 2014-2015  Simone Donadello
+Copyright (C) 2014-2016  Simone Donadello
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

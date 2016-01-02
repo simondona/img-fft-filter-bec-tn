@@ -1,9 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Multi Image FFT Filter
-# <https://github.com/simondona/img-fft-filter-bec-tn>
-# Copyright (C) 2014-2015  Simone Donadello
+# Copyright (C) 2014-2016  Simone Donadello
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -47,8 +45,8 @@ def main():
     args = parser.parse_args()
 
     print "Multi Image FFT Filter"
-    print "author: Simone Donadello - license: GNU GPL v3"
     print "https://github.com/simondona/img-fft-filter-bec-tn"
+    print "author: Simone Donadello - license: GNU GPL v3"
     print
 
     app = QtGui.QApplication(sys.argv)

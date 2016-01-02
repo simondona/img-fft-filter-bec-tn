@@ -1,9 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Multi Image FFT Filter
-# <https://github.com/simondona/img-fft-filter-bec-tn>
-# Copyright (C) 2014-2015  Simone Donadello
+# Copyright (C) 2014-2016  Simone Donadello
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -374,16 +372,18 @@ class ApplicationWindow(Application, QtGui.QMainWindow):
         """
         QtGui.QMessageBox.about(self, "About",
                                 """\
-MIFF - Multi Image FFT-Filter
+MIFF - Multi Image FFT Filter
 
-FFT-filter, 2D fit and video creator for '.sis' images:
+https://github.com/simondona/img-fft-filter-bec-tn
+
+FFT filter, 2D fit and video creator for '.sis' images:
 * remove interference fringes via FFT filtering masks
 * fit images to 2D functions
 * normalize images and filter noise
 * create movies from multiple frames
 
 Uses Python, Scipy, Matplotlib, Numpy, PyQt
-Video support uses Libav (or FFMpeg) and Imagemagick
+Video support uses Libav (or FFmpeg) and ImageMagick
 
-Copyright (C) 2014-2015  Simone Donadello
-https://github.com/simondona/img-fft-filter-bec-tn""")
+Copyright (C) 2014-2016  Simone Donadello
+License: GNU GPL v3""")
