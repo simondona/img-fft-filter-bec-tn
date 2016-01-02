@@ -204,7 +204,15 @@ class Application(object):
                     self.open_sis()
             #otherwise if any image is currently loaded ask again
             elif self.image.filename == "":
-                self.open_sis()
+                #confirm exit to avoid infinite dialogs if one doesn't want to open a file
+                msg = "If you don't provide a valid file to open the program will be closed. Are you sure?"
+                reply = QtGui.QMessageBox.question(self, 'Close program', msg,
+                                                   QtGui.QMessageBox.Yes | QtGui.QMessageBox.No,
+                                                   QtGui.QMessageBox.Yes)
+                if reply == QtGui.QMessageBox.Yes:
+                    exit()
+                else:
+                    self.open_sis()
         else:
             #if a filename was give try to open it
             self._load_sis(fname)
